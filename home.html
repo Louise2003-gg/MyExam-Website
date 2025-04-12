@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="header-box mawalaka">
+            <a href="#home">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="#project">PROJECT</a>
+        </div>
+        <div class="header-box-for-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="overlay" id="menuOverlay">
+            <span class="close-btn" id="closeOverlay">&times;</span>
+            <a href="#home">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="#">CONTACT US</a>
+            <a href="#project">PROJECT</a>
+        </div>
+    </div>
+
+    <div class="title" id="home">
+        <h1>"A great web developer doesn't just write code, they build experiences."</h1>
+    </div>
+
+    <div class="cont">
+        <div class="sulat">
+            <p>"Web design isn't just what I do it's how I tell stories. I turn ideas into clean, interactive, and visually engaging websites that speak louder than words."</p>
+            <p class="myself">Hello, I'm Louise Adrian Teatro, a web developer with expertise in both front-end and back-end development. I work with technologies like HTML, CSS, JavaScript, and frameworks such as React and Angular, as well as server-side languages like Node.js and PHP. I have experience with both SQL and NoSQL databases, API integration, and creating responsive, user-friendly designs. I focus on delivering clean, maintainable code that enhances user experience and solves real-world problems.
+            </p> <br>
+            <h5 class="ngalan">— Louise Adrian Teatro</h5>
+        </div>
+
+        <div class="prof">
+            <img class="teats" src="teats.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="lastcont" id="project">
+        <a class="bots" href="https://louise2003-gg.github.io/3rd-Table-Web/homepage.html">
+            <h3>Project 1</h3>
+            <div class="boxes">
+                <img src="hbo max.png" alt="">
+            </div>
+        </a>
+
+        <a class="bots" href="https://louise2003-gg.github.io/My-Website/homepage.html">
+            <h3>Project 2</h3>
+            <div class="boxes">
+                <img src="logos-1024x576.jpg" alt="">
+            </div>    
+        </a>
+
+        <a class="bots" href="https://louise2003-gg.github.io/2nd-Website/home.html">
+            <h3>Project 3</h3>
+            <div class="boxes">
+                <img src="netflix.jpg" alt="">
+            </div>
+        </a>
+
+        <a class="bots" href="https://www.apps.disneyplus.com/ph/onboarding">
+            <h3>Project 4</h3>
+            <div class="boxes">
+                <img src="logos-1024x576 disney.jpg" alt="">
+            </div>
+        </a>
+    </div>
+
+    <div class="end">
+        <h1 class="ending">This is For School Purposes Only!!</h1>
+    </div>
+
+    
+</body>
+
+<script>
+    const menuIcon = document.querySelector('.fa-bars');
+    const overlay = document.getElementById('menuOverlay');
+    const closeBtn = document.getElementById('closeOverlay');
+    const overlayLinks = document.querySelectorAll('#menuOverlay a');
+
+    // Toggle overlay open/close on menu icon click
+    menuIcon.addEventListener('click', () => {
+        overlay.classList.toggle('show');
+    });
+
+    // Close overlay when close button is clicked
+    closeBtn.addEventListener('click', () => {
+        overlay.classList.remove('show');
+    });
+
+    // Close overlay when any link inside it is clicked
+    overlayLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            overlay.classList.remove('show');
+        });
+    });
+</script>
+
+</html>

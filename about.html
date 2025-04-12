@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Movie Style</title>
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header-box mawalaka">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="home.html">PROJECT</a>
+        </div>
+        <div class="header-box-for-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="overlay" id="menuOverlay">
+            <span class="close-btn" id="closeOverlay">&times;</span>
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="home.html">PROJECT</a>
+        </div>
+    </div>
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="title">LOUISE ADRIAN TEATRO</h1>
+      <p class="tagline">"Coding is my superpower. Web is my world."</p>
+      <div class="bio">
+        <p>I’m a web developer with a passion for cinematic design and digital storytelling. I build immersive, responsive websites with HTML, CSS, JS, and frameworks like React or Angular. I also integrate APIs, databases, and server-side logic to create seamless user experiences.</p>
+        <p>When I’m not coding, I’m diving into sci-fi movies, writing new digital scripts, and dreaming of worlds yet to be created. 🎬💻</p>
+        <p class="signature">— Director: Louise Adrian Teatro</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+    const menuBtn = document.querySelector(".header-box-for-menu"); // The menu button (bars)
+    const menuOverlay = document.getElementById("menuOverlay"); // The overlay menu
+    const closeOverlay = document.getElementById("closeOverlay"); // The close button in the overlay
+  
+    // Toggle the overlay when the menu button is clicked
+    menuBtn.addEventListener("click", () => {
+      menuOverlay.classList.add("show"); // Show the overlay by adding the 'show' class
+    });
+  
+    // Hide the overlay when the close button is clicked
+    closeOverlay.addEventListener("click", () => {
+      menuOverlay.classList.remove("show"); // Remove the 'show' class to hide the overlay
+    });
+  </script>
+  
+</html>
